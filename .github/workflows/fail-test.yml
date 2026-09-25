@@ -11,9 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print a message
-        run: echo "Starting the job... but it is going to fail!"
+        run: echo "Starting the job..."
 
-      - name: Intentionally Failing Step
+      - name: Completion Step
         run: |
-          echo "Crashing the workflow with an exit code 1"
-          exit 1
+          echo "Workflow completed successfully"
